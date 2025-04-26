@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gonevmys.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2025-04-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gonevmys.github.io/blog/categories/index.html</loc>
     
     <lastmod>2025-04-26</lastmod>
@@ -28,69 +37,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16113.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16112.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16111.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16110.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16109.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16108.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gonevmys.github.io/blog/p/16107.html</loc>
-    
-    <lastmod>2025-04-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://gonevmys.github.io/blog</loc>
@@ -108,5 +54,12 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://gonevmys.github.io/blog/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
+    <lastmod>2025-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
