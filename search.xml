@@ -23,4 +23,22 @@
         <tag>test</tag>
       </tags>
   </entry>
+  <entry>
+    <title>test</title>
+    <url>/blog/p/63534.html</url>
+    <content><![CDATA[<h1>好累</h1>
+<h2 id="好累">好累</h2>
+<h3 id="好累-2">好累</h3>
+<h4 id="好累-3">好累</h4>
+<h5 id="好累-4">好累</h5>
+<h6 id="好累-5">好累</h6>
+<p>好累</p>
+]]></content>
+      <categories>
+        <category>测试类</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
 </search>
