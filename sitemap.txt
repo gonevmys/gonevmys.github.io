@@ -1,8 +1,8 @@
-https://gonevmys.github.io/blog/p/63534.html
-https://gonevmys.github.io/blog/p/63534.html
-https://gonevmys.github.io/blog/about/index.html
-https://gonevmys.github.io/blog/categories/index.html
-https://gonevmys.github.io/blog/tags/index.html
-https://gonevmys.github.io/blog
-https://gonevmys.github.io/blog/tags/test/
-https://gonevmys.github.io/blog/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/
+https://gonevmys.github.io/p/63534.html
+https://gonevmys.github.io/p/63534.html
+https://gonevmys.github.io/about/index.html
+https://gonevmys.github.io/categories/index.html
+https://gonevmys.github.io/tags/index.html
+https://gonevmys.github.io/
+https://gonevmys.github.io/tags/test/
+https://gonevmys.github.io/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/
