@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gonevmys.github.io/blogs/9b4dc93b.html</loc>
+    <loc>https://gonevmys.me/blogs/9b4dc93b.html</loc>
     
     <lastmod>2025-05-02</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/blogs/13bb8d58.html</loc>
+    <loc>https://gonevmys.me/blogs/13bb8d58.html</loc>
     
     <lastmod>2025-04-27</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/blogs/8ab2dce2.html</loc>
+    <loc>https://gonevmys.me/blogs/8ab2dce2.html</loc>
     
     <lastmod>2025-04-27</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/about/index.html</loc>
+    <loc>https://gonevmys.me/about/index.html</loc>
     
     <lastmod>2025-04-26</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/categories/index.html</loc>
+    <loc>https://gonevmys.me/categories/index.html</loc>
     
     <lastmod>2025-04-26</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/tags/index.html</loc>
+    <loc>https://gonevmys.me/tags/index.html</loc>
     
     <lastmod>2025-04-26</lastmod>
     
@@ -57,7 +57,7 @@
   
 
   <url>
-    <loc>https://gonevmys.github.io/</loc>
+    <loc>https://gonevmys.me/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -65,14 +65,14 @@
 
   
   <url>
-    <loc>https://gonevmys.github.io/tags/LeetCode/</loc>
+    <loc>https://gonevmys.me/tags/LeetCode/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/tags/test/</loc>
+    <loc>https://gonevmys.me/tags/test/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -81,14 +81,14 @@
 
   
   <url>
-    <loc>https://gonevmys.github.io/categories/LeetCode/</loc>
+    <loc>https://gonevmys.me/categories/LeetCode/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
+    <loc>https://gonevmys.me/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
     <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
