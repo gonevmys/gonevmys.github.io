@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gonevmys.github.io/p/13bb8d58.html</loc>
+    <loc>https://gonevmys.github.io/blogs/8ab2dce2.html</loc>
+    
+    <lastmod>2025-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gonevmys.github.io/blogs/13bb8d58.html</loc>
     
     <lastmod>2025-04-27</lastmod>
     
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://gonevmys.github.io/p/8ab2dce2.html</loc>
+    <loc>https://gonevmys.github.io/blogs/8ab2dce2.html</loc>
     
     <lastmod>2025-04-27</lastmod>
     
@@ -49,15 +58,22 @@
 
   <url>
     <loc>https://gonevmys.github.io/</loc>
-    <lastmod>2025-04-27</lastmod>
+    <lastmod>2025-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://gonevmys.github.io/tags/LeetCode/</loc>
+    <lastmod>2025-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gonevmys.github.io/tags/test/</loc>
-    <lastmod>2025-04-27</lastmod>
+    <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -65,8 +81,15 @@
 
   
   <url>
+    <loc>https://gonevmys.github.io/categories/LeetCode/</loc>
+    <lastmod>2025-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://gonevmys.github.io/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/</loc>
-    <lastmod>2025-04-27</lastmod>
+    <lastmod>2025-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

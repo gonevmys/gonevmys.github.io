@@ -2,7 +2,72 @@
 <search>
   <entry>
     <title>test1</title>
-    <url>/p/8ab2dce2.html</url>
+    <url>/blogs/8ab2dce2.html</url>
+    <content><![CDATA[<h1><a href="https://leetcode.cn/problems/push-dominoes/">838. 推多米诺</a></h1>
+<p><code>n</code> 张多米诺骨牌排成一行，将每张多米诺骨牌垂直竖立。在开始时，同时把一些多米诺骨牌向左或向右推。</p>
+<p>每过一秒，倒向左边的多米诺骨牌会推动其左侧相邻的多米诺骨牌。同样地，倒向右边的多米诺骨牌也会推动竖立在其右侧的相邻多米诺骨牌。</p>
+<p>如果一张垂直竖立的多米诺骨牌的两侧同时有多米诺骨牌倒下时，由于受力平衡， 该骨牌仍然保持不变。</p>
+<p>就这个问题而言，我们会认为一张正在倒下的多米诺骨牌不会对其它正在倒下或已经倒下的多米诺骨牌施加额外的力。</p>
+<p>给你一个字符串 <code>dominoes</code> 表示这一行多米诺骨牌的初始状态，其中：</p>
+<ul>
+<li><code>dominoes[i] = 'L'</code>，表示第 <code>i</code> 张多米诺骨牌被推向左侧，</li>
+<li><code>dominoes[i] = 'R'</code>，表示第 <code>i</code> 张多米诺骨牌被推向右侧，</li>
+<li><code>dominoes[i] = '.'</code>，表示没有推动第 <code>i</code> 张多米诺骨牌。</li>
+</ul>
+<p>返回表示最终状态的字符串。</p>
+<p><strong>示例 1：</strong></p>
+<pre><strong>输入：</strong>dominoes = "RR.L"
+<strong>输出：</strong>"RR.L"
+<strong>解释：</strong>第一张多米诺骨牌没有给第二张施加额外的力。
+</pre>
+<p><strong>示例 2：</strong></p>
+<p><img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/05/18/domino.png" alt=""></p>
+<pre><strong>输入：</strong>dominoes = ".L.R...LR..L.."
+<strong>输出：</strong>"LL.RR.LLRRLL.."</pre>
+<p><strong>提示：</strong></p>
+<ul>
+<li><code>n == dominoes.length</code></li>
+<li><code>1 &lt;= n &lt;= 10&lt;sup&gt;5&lt;/sup&gt;</code></li>
+<li><code>dominoes[i]</code> 为 <code>'L'</code>、<code>'R'</code> 或 <code>'.'</code></li>
+</ul>
+<h1>题解</h1>
+<p>个人使用双指针思路，思路没有官方的实现方式巧妙，但也算是笨人有笨方法。刚开始刷LeetCode，代码写的比较丑陋。具体的思路就是，一个指针指向字符串开头，根据该字符和下一个字符的内容，决定结果。两个指针分别是 <code>left</code>和 <code>right</code>，对应的字符就用其代替，初始时 <code>left=0 </code>，<code>right=1</code>：</p>
+<ul>
+<li>
+<p>如果 <code>left=.</code>，那么向右移动 <code>right</code>，如果：</p>
+<ul>
+<li><code>right=L</code>，那么将 <code>left</code>到 <code>right</code>中的所有字符都变成 <code>L</code>；</li>
+<li><code>right=.</code>，那么将 <code>right</code>继续向右移动，若 <code>right</code>移动到结束，则将所有 <code>.</code>维持不变；</li>
+<li><code>right=R</code>，将 <code>left</code>到 <code>right</code>之间的所有符号变成 <code>.</code>；</li>
+<li>做完上述操作后，将 <code>left</code>移动到 <code>right</code>的位置。</li>
+</ul>
+</li>
+<li>
+<p>如果 <code>left=R</code>，那么向右移动 <code>right</code>，如果：</p>
+<ul>
+<li><code>right=L</code>，那么将 <code>left</code>到 <code>right</code>之间的 <code>.</code>字符对称分割为 <code>R</code>和 <code>L</code>；</li>
+<li><code>right=.</code>，那么将 <code>right</code>继续向右移动，如果 <code>right</code>移动到结束，则将所有 <code>R</code>更改为 <code>.</code>；</li>
+<li><code>right=R</code>，将 <code>left</code>到 <code>right</code>之间的所有符号变成 <code>R</code> ；</li>
+<li>做完上述操作后，将 <code>left</code>移动到 <code>right</code>的位置。</li>
+</ul>
+</li>
+<li>
+<p>如果 <code>left=L</code>，那么直接向右移动 <code>left</code>；</p>
+</li>
+</ul>
+<p>经过上述思路的代码实现如下：</p>
+<figure class="highlight python-repl"><table><tbody><tr><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line"></span><br><span class="line"># 双指针，遇到 . 则等待下一个L，如果途中遇到R，则直接跳转到R，不再等待；</span><br><span class="line"># 遇到L，则直接跳到L，不再等待</span><br><span class="line"># 遇到R，则等待下一个L，R和L对半分，直到到达中间</span><br><span class="line"></span><br><span class="line">class Solution:</span><br><span class="line">    def pushDominoes(self, dominoes: str) -&gt; str:</span><br><span class="line">        left = 0</span><br><span class="line">        right = 0</span><br><span class="line">        ret = ''</span><br><span class="line">        while left &lt; len(dominoes) and right &lt; len(dominoes):</span><br><span class="line">            if left == len(dominoes) - 1:</span><br><span class="line">                ret += dominoes[left]</span><br><span class="line">                break</span><br><span class="line">            right = left + 1</span><br><span class="line">            if dominoes[left] == '.':</span><br><span class="line">                while right &lt; len(dominoes):</span><br><span class="line">                    if dominoes[right] == 'L':</span><br><span class="line">                        ret += 'L' * (right - left + 1)</span><br><span class="line">                        left = right + 1</span><br><span class="line">                        # right = left</span><br><span class="line">                        break</span><br><span class="line">                    elif dominoes[right] == 'R':</span><br><span class="line">                        ret += '.' * (right - left)</span><br><span class="line">                        left = right</span><br><span class="line">                        # ret += 'R'</span><br><span class="line">                        break</span><br><span class="line">                    elif dominoes[right] == '.':</span><br><span class="line">                        right += 1</span><br><span class="line">                        if right &gt;= len(dominoes):</span><br><span class="line">                            ret += '.' * (right - left)</span><br><span class="line">            elif dominoes[left] == 'L':</span><br><span class="line">                ret += 'L'</span><br><span class="line">                left += 1</span><br><span class="line">                # right = left</span><br><span class="line">            else:</span><br><span class="line">                while right &lt; len(dominoes):</span><br><span class="line">                    if dominoes[right] == 'R':</span><br><span class="line">                        ret += 'R' * (right - left)</span><br><span class="line">                        left = right</span><br><span class="line">                        # right = left</span><br><span class="line">                        break</span><br><span class="line">                    elif dominoes[right] == '.':</span><br><span class="line">                        right += 1</span><br><span class="line">                        if right &gt;= len(dominoes):</span><br><span class="line">                            ret += 'R' * (right - left)</span><br><span class="line">                    else:</span><br><span class="line">                        interval = right - left + 1</span><br><span class="line">                        if interval % 2 == 0:</span><br><span class="line">                            ret = ret + 'R' * (interval // 2) + 'L' * (interval // 2)</span><br><span class="line">                        else:</span><br><span class="line">                            ret = ret + 'R' * (interval // 2) + '.' + 'L' * (interval // 2)</span><br><span class="line">                        left = right + 1</span><br><span class="line">                        # right = left</span><br><span class="line">                        break</span><br><span class="line">        return ret</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == '__main__':</span><br><span class="line">    s = Solution()</span><br><span class="line">    print(s.pushDominoes(".R..L.")) # RR.L</span><br><span class="line">    # LL.RR.LLRRLL..  # ..RRLLRRRRRRRRLL.RRR</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test1</title>
+    <url>/blogs/8ab2dce2.html</url>
     <content><![CDATA[<p>这里是摘要。</p>
 <span id="more"></span>
 <h2 id="标题1">标题1</h2>
@@ -25,7 +90,7 @@
   </entry>
   <entry>
     <title>test2</title>
-    <url>/p/13bb8d58.html</url>
+    <url>/blogs/13bb8d58.html</url>
     <content><![CDATA[<h1>好累</h1>
 <h2 id="好累">好累</h2>
 <h3 id="好累-2">好累</h3>
