@@ -3,7 +3,8 @@
   <entry>
     <title>test1</title>
     <url>/blogs/8ab2dce2.html</url>
-    <content><![CDATA[<h1><a href="https://leetcode.cn/problems/push-dominoes/">838. 推多米诺</a></h1>
+    <content><![CDATA[<p>20250502 LeetCode每日一题——838. 推多米诺</p>
+<h1><a href="https://leetcode.cn/problems/push-dominoes/">838. 推多米诺</a></h1>
 <p><code>n</code> 张多米诺骨牌排成一行，将每张多米诺骨牌垂直竖立。在开始时，同时把一些多米诺骨牌向左或向右推。</p>
 <p>每过一秒，倒向左边的多米诺骨牌会推动其左侧相邻的多米诺骨牌。同样地，倒向右边的多米诺骨牌也会推动竖立在其右侧的相邻多米诺骨牌。</p>
 <p>如果一张垂直竖立的多米诺骨牌的两侧同时有多米诺骨牌倒下时，由于受力平衡， 该骨牌仍然保持不变。</p>
