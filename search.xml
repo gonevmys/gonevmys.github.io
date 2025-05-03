@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>leetcode每日一题——1007. 行相等的最少多米诺旋转</title>
+    <url>/blogs/2b98371a.html</url>
+    <content><![CDATA[<p>20250503 LeetCode每日一题——<a href="https://leetcode.cn/problems/minimum-domino-rotations-for-equal-row/">1007. 行相等的最少多米诺旋转</a></p>
+<span id="more"></span>
+<h1>1007. 行相等的最少多米诺旋转</h1>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LeetCode每日一题——838. 推多米诺</title>
     <url>/blogs/9b4dc93b.html</url>
     <content><![CDATA[<p>20250502 LeetCode每日一题——838. 推多米诺</p>
