@@ -4,6 +4,7 @@
     <title>leetcode每日一题——1007. 行相等的最少多米诺旋转</title>
     <url>/blogs/2b98371a.html</url>
     <content><![CDATA[<p>20250503 LeetCode每日一题——1007. 行相等的最少多米诺旋转</p>
+<span id="more"></span>
 <h1>1007. 行相等的最少多米诺旋转</h1>
 <p>在一排多米诺骨牌中，<code>tops[i]</code> 和 <code>bottoms[i]</code> 分别代表第 <code>i</code> 个多米诺骨牌的上半部分和下半部分。（一个多米诺是两个从 1 到 6 的数字同列平铺形成的 —— 该平铺的每一半上都有一个数字。）</p>
 <p>我们可以旋转第 <code>i</code> 张多米诺，使得 <code>tops[i]</code> 和 <code>bottoms[i]</code> 的值交换。</p>
