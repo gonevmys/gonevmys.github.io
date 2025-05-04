@@ -6,7 +6,7 @@ https://gonevmys.me/about/index.html
 https://gonevmys.me/categories/index.html
 https://gonevmys.me/tags/index.html
 https://gonevmys.me/
-https://gonevmys.me/tags/LeetCode/
 https://gonevmys.me/tags/test/
-https://gonevmys.me/categories/LeetCode/
+https://gonevmys.me/tags/LeetCode/
 https://gonevmys.me/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB/
+https://gonevmys.me/categories/LeetCode/
